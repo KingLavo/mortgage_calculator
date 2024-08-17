@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Images/favIcon2.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styleFiles/style.css">
+    <title>Mortage | Cal</title>
+</head>
+<body>
+      <div class="container">
+        <div class="left_container">
+            <div class="nav">
+                <h3>mortgage calculator</h3>
+                <a id="clear">clear all</a>
+            </div>
+            <div class="mortage_input">
+                <form id="form" autocomplete="off">
+                    <div class="form_group">
+                        <label class="label">mortgage amount</label>
+                        <div class="form_action border">
+                            <span class="span_err_mg">£</span>
+                            <input type="text" id="mortgage_amount">
+                        </div>
+                        <p class="error_mg"></p>
+                    </div>
+                    <div class="mortgage_term">
+                        <div class="mortgage">
+                            <label>mortgage term</label>
+                            <div class="sub_div border">
+                                <input type="text" id="mortgage_term">
+                                 <span class="span_err_mg">years</span>
+                            </div>
+                            <p class="error_mg"></p>
+                        </div>
+
+                        <div class="mortgage">
+                            <label>interest rate</label>
+                            <div class="sub_div border">
+                                <input type="text" id="interest_rate" >
+                                <span class="span_err_mg">%</span>
+                            </div>
+                            <p class="error_mg"></p>
+                        </div>
+                    </div>
+                    <div class="mortgage_type_container">
+                         <label> mortgage type</label>
+                        <div class="mortgage_type">
+                            <input type="checkbox" value="repayment" class="checkbox">
+                            <span>repayment</span>
+                        </div>
+                        <div class="mortgage_type">
+                            <input type="checkbox"  value="interest" class="checkbox">
+                            <span>interest only</span>
+                        </div>
+                    </div>
+                    <p class="error_mg"></p>
+                    <button type="submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path fill="#133041" d="M18.75 2.25H5.25a1.5 1.5 0 0 0-1.5 1.5v16.5a1.5 1.5 0 0 0 1.5 1.5h13.5a1.5 1.5 0 0 0 1.5-1.5V3.75a1.5 1.5 0 0 0-1.5-1.5Zm-10.5 16.5a1.125 1.125 0 1 1 0-2.25 1.125 1.125 0 0 1 0 2.25Zm0-3.75a1.125 1.125 0 1 1 0-2.25 1.125 1.125 0 0 1 0 2.25ZM12 18.75a1.125 1.125 0 1 1 0-2.25 1.125 1.125 0 0 1 0 2.25ZM12 15a1.125 1.125 0 1 1 0-2.25A1.125 1.125 0 0 1 12 15Zm3.75 3.75a1.125 1.125 0 1 1 0-2.25 1.125 1.125 0 0 1 0 2.25Zm0-3.75a1.125 1.125 0 1 1 0-2.25 1.125 1.125 0 0 1 0 2.25Zm1.5-5.25a.75.75 0 0 1-.75.75h-9a.75.75 0 0 1-.75-.75V6a.75.75 0 0 1 .75-.75h9a.75.75 0 0 1 .75.75v3.75Z"/></svg>
+                        <span>calculate repayments</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="right_container">
+            <div class="result_output" id="result_output">
+                <h4>Your results</h4>
+                <h5>
+                    Your results are show below based on the information you provide. To adjust the reslt, edith the 
+                    form and <br> click "calculate repayments" again.
+                </h5>
+                <div class="output">
+                    <p id="paymentMessage">
+                        
+                    </p>
+                     <div class="monthly">
+                        <h2  id="monthly"></h2>
+                     </div>
+                     <div class="total_repayments">
+                        <p>Total you'll repay over term</p>
+                        <p id="total"></p>
+                     </div>
+                </div>
+            </div>
+
+
+          <div class="right_container_sub" id="right_container_sub">
+            <img src="../Images/illustration-empty.svg" alt="">
+            <div class="text_container">
+                 <h3>Results show here</h3>
+                 <p>Complete the form and click "calculate repayments" to see what your monthly repayment would be.</p>
+            </div>
+          </div> 
+          <!--++++++++++++++++++++++-->
+          <!--++++++++++++++++++++++-->
+        </div>
+      </div>   
+
+      <script src="../scriptFiles/index.js"></script> 
+</body>
+</html>

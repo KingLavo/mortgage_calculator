@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+:root{
+    --mobile_width: 375px;
+    --Desktop_width: 1440px;
+    --Lime: hsl(61, 70%, 52%);
+    --Red: hsl(4, 69%, 50%);
+    --White: hsl(0, 0%, 100%);
+    --Slate-100: hsl(202, 86%, 94%);
+    --Slate-300: hsl(203, 41%, 72%);
+    --Slate-500: hsl(200, 26%, 54%);
+    --Slate-700: hsl(200, 24%, 40%);
+    --Slate-900: hsl(202, 55%, 16%);
+    --Slate-1000: hsl(200, 88%, 7%);
+    --font-size: 16px; 
+    --family: "Plus Jakarta Sans";
+    --font-weight: 500;
+    --font-weight-700: 700;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--Slate-100);
+    font-family: var(--family);
+}
+.container{
+    display: grid;
+    grid-template-columns:  repeat(2, 1fr); 
+    background-color: var(--White);
+    margin: 7.7% 20%;
+    border-radius: 1rem;
+    box-shadow: 4px 4px 8px 4px var(--Slate-1000);
+}
+.left_container{
+    padding: 1.5rem 2rem 0 2rem;
+}
+/* +++++Header text and links+++++ */
+/* +++++Header text and links+++++ */
+.left_container .nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+.left_container .nav h3{
+    text-transform: capitalize;
+    color: var(--Slate-900);
+    margin: 0;
+    padding: 0;
+}
+.left_container .nav a{
+    text-transform: capitalize;
+    text-decoration: underline;
+    color: var(--Slate-300);
+    cursor: pointer;
+}
+
+/* +++ form design start here+++++ */
+/* +++ form design start here+++++ */
+.form_group, .mortgage_term{
+    margin-bottom: 1.4rem;
+}
+.form_action{
+    width: 100%;
+    height: 30px;
+    border: 1px solid var(--Slate-500);
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    overflow-y: hidden;
+}
+.form_action input, .sub_div input{
+    outline: none;
+    border: none;
+    font-weight: var(--font-weight-700);
+    font-size: var(--font-size);
+    margin-left: 8px;
+    color: var(--Slate-900);
+    cursor: pointer;
+}
+.form_action span, .mortgage .sub_div span{
+    background-color: var(--Slate-100);
+    padding: 1.5rem .5rem;
+    text-align: center;
+    font-weight: var(--font-weight);
+    color: var(--Slate-900);
+    border-radius: 4px 0 0;
+}
+.mortgage_term{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mortgage{
+    width: 47%;
+}
+.sub_div{
+    border: 1px solid blue;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    border: 1px solid var(--Slate-500);
+    overflow-y: hidden;
+    border-radius: 4px;
+}
+.mortgage .sub_div input{
+    width: 100%;
+    border: none;
+    outline: none;
+}
+.mortgage .sub_div span{
+    border-radius: 0 4px 4px 0;
+    text-align: center;
+}
+ 
+.mortgage_type_container .mortgage_type{
+    width: 95%;
+    border: 1px solid var(--Slate-500);
+    margin-bottom: .6rem;
+    display: flex;
+    align-items: center;
+    padding: .5rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.mortgage_type .checkbox{
+    position: relative;
+    cursor: pointer;
+}
+.mortgage_type .checkbox::after{
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 8px;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    border-radius: 50px;
+    transition: 0.2s all ease-out;
+}
+.mortgage_type .checkbox::before{
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    border-radius: 50px;
+    background-color: var(--White);
+    border: 1px solid var(--Slate-300);
+    transition: 0.2s all ease-out;
+}
+.mortgage_type .checkbox:checked::after{
+    background-color: var(--Lime)
+}
+  .mortgage_type span{
+    text-transform: capitalize;
+    margin-left: 8px;
+    font-weight: var(--font-weight-700);
+    text-align: center;
+    font-size: 12px;
+    color: var(--Slate-900);
+}
+.mortgage_type :hover{
+    background-color: var(--Lime);
+}
+
+button{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 1.5rem 0;
+    padding: .7rem 0 .7rem 2rem;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    background-color: var(--Lime);
+    cursor: pointer;
+}
+button span{
+    text-transform: capitalize;
+    font-weight: var(--font-weight-700);
+    margin-left: 8px;
+    color: var(--Slate-900);
+} 
+label{
+    font-weight: var(--font-weight);
+    text-transform: capitalize;
+    font-size: 10px;
+    display: block;
+    margin-bottom: 5px;
+    color: var(--Slate-500);
+}
+
+/* right container design  */
+/* right container design  */
+.right_container{
+    background-color: var(--Slate-900);
+    /* height: ; */
+    border-radius: 0 1rem 1rem 4rem;
+}
+
+.right_container_sub{
+    margin: 8rem 25px .6rem 25px;
+    text-align: center;
+}
+
+.right_container_sub img{
+    width: 150px;
+    height: 100px;
+}
+ .text_container h3{
+    color: var(--White);
+    font-weight: var(--font-weight-700);
+ }
+
+ .text_container p{
+    color: var(--Slate-300);
+    font-size: 12.5px;
+ }
+
+ 
+/* ++++++Start media query++++++++ */
+/* ++++++Start media query++++++++ */
+ @media screen and (max-width: 730px) {
+    :root{
+        --font-weight: 500;
+        --font-weight-700: 700;
+        --font-size: 16px
+    }
+    body{
+        background-color: var(--White);
+    }
+    .container{
+        display: block;
+        border-radius: 0;
+        margin: 0;
+    }
+
+    .left_container .nav{
+        display: block;
+    }
+    .left_container .nav h3{
+        font-weight: var(--font-weight-700);
+        font-size: x-large;
+        margin: 1rem 0;
+    }
+    .left_container .nav a{
+        font-weight: var(--font-weight-700);
+        font-size: x-large;
+    }
+    label{
+        font-size: larger;
+        font-weight: var(--font-weight-700);
+        margin-bottom: 8px;
+    }
+    .form_action input, .sub_div input{
+        font-weight: bolder;
+        font-size: large;
+        /* outline: none;
+        border: none; */
+        margin-left: 1rem;
+    } 
+    .form_action, .sub_div, .mortgage_type{
+        height: 55px;
+    }
+    .mortgage_term{
+        display: block;
+    }
+    .mortgage{
+        width: 100%;
+        margin-block: 20px;
+    }
+    .mortgage_type .checkbox::after{
+        height: 13px;
+        width: 13px;
+    }
+    .mortgage_type .checkbox::before{
+        height: 20px;
+        width: 20px;
+    }
+    .mortgage_type span{
+        font-size: x-large;
+        font-weight: bolder;
+    }
+    button{
+        margin: 2rem 0;
+        padding: 1.25rem;
+        width: 100%;
+        justify-content: center;
+    }   
+
+    button span{
+        font-weight: bolder;
+        font-size: large;
+    }
+    
+    .right_container{
+        height: 60vh;
+        border-radius: 0; 
+        padding: 1.5rem;     
+    }
+    .right_container_sub{
+        margin: 2.5rem;
+    }
+    .right_container_sub img{
+        width:  200px;
+        height: 150px;
+    }
+    .text_container{
+        font-weight: bolder;
+        width: 80%;
+        margin: 0 auto;
+    }
+ }
+ 
+
+
+ /* +++++Error Message STYLES+++++++ */
+  /* +++++Error Message STYLES+++++++ */
+ .error_mg {
+    color: var(--Red);
+    text-transform: capitalize;
+    font-size: 10px;
+    font-weight: var(--font-weight-700);
+ }
+ .form_action .err_bg, .mortgage .sub_div .err_bg{
+    background-color: var(--Red);
+    color: var(--White);
+ }
+ .border_mg{
+    border: 1px solid var(--Red);
+ }
+ 
+
+ 
+/*++++++++++++Repayment output display++++++++++*/
+/*++++++++++++Repayment output display++++++++++*/
+.right_container .result_output{
+    max-height: 80vh;
+    margin: .6rem 2rem;
+    display: none;
+
+}
+.right_container .result_output h4{
+    color: var(--White);
+    margin-bottom: -5px;
+}
+
+.right_container .result_output h5{
+    color: var(--Slate-300);
+    font-weight: 500;
+    line-height: 1.2rem;
+}
+.right_container .result_output .output{
+    background-color: var(--Slate-1000);
+    border-radius: 5px;
+    padding: .3rem 1.5rem;
+    transition: 0.5s ease-in-out;
+    border-top: .19rem solid var(--Lime);
+}
+.right_container .result_output .monthly{
+    border-bottom: 1px solid var(--Slate-700);
+}
+.right_container .result_output .output p{
+    font-size: 12px;
+    color: var(--Slate-300);
+}
+.right_container .result_output .output h2{
+    color: var(--Lime);
+    font-weight: bolder;
+    font-size: 2rem;
+}
+.right_container .result_output .total_repayments p:nth-child(1){
+    font-size: 12px;
+    color: var(--Slate-300);
+}
+
+.right_container .result_output .total_repayments p:nth-child(2){
+    color: var(--White);
+    font-size: large;
+    font-weight: var(--font-weight-700);
+}
+
+.mortgage_type:hover{
+    background-color: var(--Lime);
+    opacity: .4;
+    color: #fff;
+    z-index: 1;
+}
+
+
