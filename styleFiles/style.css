@@ -74,6 +74,7 @@ body{
     border: none;
     font-weight: var(--font-weight-700);
     font-size: var(--font-size);
+    background-color: transparent;
     margin-left: 8px;
     color: var(--Slate-900);
     cursor: pointer;
@@ -197,7 +198,6 @@ label{
 /* right container design  */
 .right_container{
     background-color: var(--Slate-900);
-    /* height: ; */
     border-radius: 0 1rem 1rem 4rem;
 }
 
@@ -250,18 +250,20 @@ label{
         font-weight: var(--font-weight-700);
         font-size: x-large;
     }
+     
     label{
         font-size: larger;
         font-weight: var(--font-weight-700);
         margin-bottom: 8px;
     }
+ 
     .form_action input, .sub_div input{
         font-weight: bolder;
+        width: 100%;
         font-size: large;
-        /* outline: none;
-        border: none; */
         margin-left: 1rem;
     } 
+
     .form_action, .sub_div, .mortgage_type{
         height: 55px;
     }
@@ -297,7 +299,7 @@ label{
     }
     
     .right_container{
-        height: 60vh;
+        height: 70vh;
         border-radius: 0; 
         padding: 1.5rem;     
     }
@@ -338,7 +340,6 @@ label{
 /*++++++++++++Repayment output display++++++++++*/
 /*++++++++++++Repayment output display++++++++++*/
 .right_container .result_output{
-    max-height: 80vh;
     margin: .6rem 2rem;
     display: none;
 
@@ -387,7 +388,6 @@ label{
     background-color: var(--Lime);
     opacity: .4;
     color: #fff;
-    z-index: 1;
 }
 
 
