@@ -372,16 +372,13 @@ label{
     }
     
     .right_container{
-        height: 100vh;
+        height: 80vh;
         border-radius: 0; 
-        padding: 1.5rem;
-        padding-top: 3rem;     
-    }
-    .right_container .result_output{
-        margin-bottom: 4rem;
+        padding: 1.5rem;     
     }
     .right_container_sub{
         margin: 2.5rem;
+        border: 3px solid red;
     }
     .right_container_sub img{
         width:  200px;
