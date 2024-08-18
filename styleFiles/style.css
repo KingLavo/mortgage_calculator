@@ -374,7 +374,8 @@ label{
     .right_container{
         height: 100vh;
         border-radius: 0; 
-        padding: 1.5rem;     
+        padding: 1.5rem;
+        padding-top: 3rem;     
     }
     .right_container .result_output{
         margin-bottom: 4rem;
