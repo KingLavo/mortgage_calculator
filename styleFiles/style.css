@@ -219,11 +219,84 @@ label{
     color: var(--Slate-300);
     font-size: 12.5px;
  }
+ .right_container .result_output{
+    margin: .6rem 2rem;
+    display: none;
+
+}
+
+ /* +++++Error Message STYLES+++++++ */
+  /* +++++Error Message STYLES+++++++ */
+ .error_mg {
+    color: var(--Red);
+    text-transform: capitalize;
+    font-size: 10px;
+    font-weight: var(--font-weight-700);
+ }
+ .form_action .err_bg, .mortgage .sub_div .err_bg{
+    background-color: var(--Red);
+    color: var(--White);
+ }
+ .border_mg{
+    border: 1px solid var(--Red);
+ }
+ 
+
+ 
+/*++++++++++++Repayment output display++++++++++*/
+/*++++++++++++Repayment output display++++++++++*/
+
+.right_container .result_output h4{
+    color: var(--White);
+    margin-bottom: -5px;
+}
+
+.right_container .result_output h5{
+    color: var(--Slate-300);
+    font-weight: 500;
+    line-height: 1.2rem;
+}
+.right_container .result_output .output{
+    background-color: var(--Slate-1000);
+    border-radius: 5px;
+    padding: .3rem 1.5rem;
+    transition: 0.5s ease-in-out;
+    border-top: .19rem solid var(--Lime);
+}
+.right_container .result_output .monthly{
+    border-bottom: 1px solid var(--Slate-700);
+}
+.right_container .result_output .output p{
+    font-size: 12px;
+    color: var(--Slate-300);
+}
+.right_container .result_output .output h2{
+    color: var(--Lime);
+    font-weight: bolder;
+    font-size: 2rem;
+}
+.right_container .result_output .total_repayments p:nth-child(1){
+    font-size: 12px;
+    color: var(--Slate-300);
+}
+
+.right_container .result_output .total_repayments p:nth-child(2){
+    color: var(--White);
+    font-size: large;
+    font-weight: var(--font-weight-700);
+}
+
+.mortgage_type:hover{
+    background-color: var(--Lime);
+    opacity: .4;
+    color: #fff;
+}
+
 
  
 /* ++++++Start media query++++++++ */
 /* ++++++Start media query++++++++ */
- @media screen and (max-width: 730px) {
+@media screen and (max-width: 730px) {
     :root{
         --font-weight: 500;
         --font-weight-700: 700;
@@ -299,9 +372,12 @@ label{
     }
     
     .right_container{
-        height: 70vh;
+        height: 100vh;
         border-radius: 0; 
         padding: 1.5rem;     
+    }
+    .right_container .result_output{
+        margin-bottom: 4rem;
     }
     .right_container_sub{
         margin: 2.5rem;
@@ -317,77 +393,4 @@ label{
     }
  }
  
-
-
- /* +++++Error Message STYLES+++++++ */
-  /* +++++Error Message STYLES+++++++ */
- .error_mg {
-    color: var(--Red);
-    text-transform: capitalize;
-    font-size: 10px;
-    font-weight: var(--font-weight-700);
- }
- .form_action .err_bg, .mortgage .sub_div .err_bg{
-    background-color: var(--Red);
-    color: var(--White);
- }
- .border_mg{
-    border: 1px solid var(--Red);
- }
- 
-
- 
-/*++++++++++++Repayment output display++++++++++*/
-/*++++++++++++Repayment output display++++++++++*/
-.right_container .result_output{
-    margin: .6rem 2rem;
-    display: none;
-
-}
-.right_container .result_output h4{
-    color: var(--White);
-    margin-bottom: -5px;
-}
-
-.right_container .result_output h5{
-    color: var(--Slate-300);
-    font-weight: 500;
-    line-height: 1.2rem;
-}
-.right_container .result_output .output{
-    background-color: var(--Slate-1000);
-    border-radius: 5px;
-    padding: .3rem 1.5rem;
-    transition: 0.5s ease-in-out;
-    border-top: .19rem solid var(--Lime);
-}
-.right_container .result_output .monthly{
-    border-bottom: 1px solid var(--Slate-700);
-}
-.right_container .result_output .output p{
-    font-size: 12px;
-    color: var(--Slate-300);
-}
-.right_container .result_output .output h2{
-    color: var(--Lime);
-    font-weight: bolder;
-    font-size: 2rem;
-}
-.right_container .result_output .total_repayments p:nth-child(1){
-    font-size: 12px;
-    color: var(--Slate-300);
-}
-
-.right_container .result_output .total_repayments p:nth-child(2){
-    color: var(--White);
-    font-size: large;
-    font-weight: var(--font-weight-700);
-}
-
-.mortgage_type:hover{
-    background-color: var(--Lime);
-    opacity: .4;
-    color: #fff;
-}
-
 
